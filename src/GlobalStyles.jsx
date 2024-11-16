@@ -33,4 +33,12 @@ body, html {
   background-position: center;
   width: 100%;
   height: 90vh;
+}
+
+.footerback{
+  background-image: url(${back});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh; 
 }`
