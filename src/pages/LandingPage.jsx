@@ -1,3 +1,4 @@
+import FirstSection from "../components/LandingPage/FirstSection";
 import Navbar from "../components/LandingPage/Navbar";
 import { GlobalStyled } from "../GlobalStyles";
 
@@ -6,6 +7,7 @@ export default function LandingPage() {
     <>
       <GlobalStyled />
       <Navbar />
+      <FirstSection/>
     </>
   );
 }
