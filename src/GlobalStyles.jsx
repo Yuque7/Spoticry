@@ -1,9 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-import back from './assets/backgroungGreen.svg';
-import albuns from './assets/albuns.svg';
+import albuns from "./assets/albuns.svg";
 import backnew from './assets/backgroundNew.svg';
+import back from './assets/backgroungGreen.svg';
 
 export const GlobalStyled = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 
 * {
   margin: 0;
@@ -12,12 +14,14 @@ export const GlobalStyled = createGlobalStyle`
 }
 
 body, html {
+  font-family: "Antonio", sans-serif;
   height: 100%;
   background-image: url(${back});
   background-size: cover;
   background-position: center;
   width: 100%;
 }
+
 
 .section{
   background-image: url(${albuns});
@@ -35,10 +39,11 @@ body, html {
   height: 90vh;
 }
 
-.footerback{
+/* .footerback{
   background-image: url(${back});
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 40vh; 
-}`
+} */
+`;

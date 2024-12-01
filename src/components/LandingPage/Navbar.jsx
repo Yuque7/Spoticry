@@ -18,7 +18,7 @@ import {
           <NavLink to="/">Mobile</NavLink>
           <NavLink to="/">Plans</NavLink>
         </NavLinks>
-        <NavLinkLogin to="/">
+        <NavLinkLogin to="/loginPage">
           <BsPersonCircle /> Login
         </NavLinkLogin>
       </NavbarContainer>
