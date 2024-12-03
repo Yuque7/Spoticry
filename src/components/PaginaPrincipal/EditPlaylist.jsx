@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ModalOverlay,ModalWrapper,EditPlaylistButton } from '../../styles/PaginaPrincipal/EditPlaylisStyles';
+import { ModalOverlay,ModalWrapper,EditPlaylistButton } from '../../styles/Paginaprincipal/EditPlaylisStyles';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

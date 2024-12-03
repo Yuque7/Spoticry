@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 import AdicionarPlaylist from "../components/User/ModalAddPlaylist";  // Importando a modal
 import Navbar from "../components/PaginaPrincipal/Navbar";
-import { GlobalStyled } from "../GlobalStyled";
 import AddSongButton from "../components/User/AddSongButton";
 import EditSongButton from "../components/User/EditSongButton";  // Importando o componente de editar música
 import RemoveSongsComponent from "../components/User/RemoveSongButton"; // Importando o novo componente
 import EditSongsComponent from "../components/User/EditSongButton";
+import { GlobalStyled } from "../GlobalStyles";
 
 // Função para recuperar o userId do token
 const getUserIdFromToken = (token) => {
@@ -189,7 +189,7 @@ function User() {
 
   return (
     <>
-      <GlobalStyled />
+      <GlobalStyled/>
       <Container>
         <ContainerPrincipal>
           <Navbar />

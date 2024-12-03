@@ -3,10 +3,7 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
-import { GlobalStyled } from "../../GlobalStyled";
 import { deletePlaylist } from "../../services/playlist"; 
- // Importando o componente de edição
-
 import {
   Container,
   PlaylistHeader,
@@ -20,8 +17,9 @@ import {
   SpinnerContainer,
   Spinner,
   ButtonDelete
-} from "../../styles/PaginaPrincipal/PlaylistViewStyled";
+} from "../../styles/Paginaprincipal/PlaylistViewStyled";
 import EditPlaylistComponent from "./EditPlaylist";
+import { GlobalStyled } from "../../GlobalStyles";
 
 function PlaylistView() {
   const { id } = useParams();
@@ -107,7 +105,7 @@ function PlaylistView() {
 
   return (
     <>
-      <GlobalStyled />
+      <GlobalStyled/>
       <Container>
         {loading ? (
           <SpinnerContainer>
