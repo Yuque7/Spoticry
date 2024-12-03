@@ -26,7 +26,7 @@
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/spoticry.git
+   git clone https://github.com/Yuque7/Spoticry.git
    ```
 
 2. Acesse o diretório do projeto:
