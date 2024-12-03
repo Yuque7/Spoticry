@@ -173,6 +173,10 @@ export const Spinner = styled.div`
 `;
 
 // Botões de ação (Editar e Deletar)
+export const Buttons = styled.div`
+gap: 9rem;
+`
+
 export const ButtonDelete = styled.button`
   background-color: #ff4747;
   color: white;
@@ -186,6 +190,26 @@ export const ButtonDelete = styled.button`
 
   &:hover {
     background-color: #e04040;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const ButtonEdit = styled.button`
+  background-color: #009afa;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #118296;
   }
 
   &:focus {

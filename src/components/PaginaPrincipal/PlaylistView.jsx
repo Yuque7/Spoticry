@@ -16,7 +16,9 @@ import {
   DefaultImage,
   SpinnerContainer,
   Spinner,
-  ButtonDelete
+  ButtonDelete,
+  ButtonEdit,
+  Buttons
 } from "../../styles/Paginaprincipal/PlaylistViewStyled";
 import EditPlaylistComponent from "./EditPlaylist";
 import { GlobalStyled } from "../../GlobalStyles";
@@ -132,11 +134,11 @@ function PlaylistView() {
                   <h1>{playlist?._name}</h1>
                   <p>{playlist?._description}</p>
                   {isCreator && (
-                    <div>
+                    <Buttons>
                       <ButtonDelete onClick={handleDeletePlaylist}>Excluir Playlist</ButtonDelete>
                       {/* Adicionando botão para editar a playlist */}
-                      <ButtonDelete onClick={handleOpenModal}>Editar Playlist</ButtonDelete>
-                    </div>
+                      <ButtonEdit onClick={handleOpenModal}>Editar Playlist</ButtonEdit>
+                    </Buttons>
                   )}
                 </PlaylistDetails>
               </PlaylistInfo>
