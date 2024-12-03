@@ -22,7 +22,8 @@ export const ModalOverlay = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  background-color: #1d1d1d;
+  background-color: #1C3734;
+  color: #ffff;
   padding: 20px;
   border-radius: 8px;
   width: 400px;
